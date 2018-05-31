@@ -4,7 +4,7 @@ export default (state = DEFAULT_STATE, { type, payload }) => {
   switch (type) {
     case 'CATEGORY_CREATE':
       return [...state, payload]; 
-    case 'CATEGORY_DESTROY':
+    case 'CATEGORY_REMOVE':
       return state.filter(category => category.id !== payload.id);
     case 'CATEGORY_UPDATE':
       return state.map(category => (category.id === payload.id ? payload : category));

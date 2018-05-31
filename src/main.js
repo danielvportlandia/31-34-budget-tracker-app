@@ -4,12 +4,12 @@ import { Provider } from 'react-redux';
 import ReactDom from 'react-dom';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import App from './component/app/app'; // remove after deployment
-import categoriesReducer from './reducer/category';
+import reducer from './reducer/main';
 import './styles/main.scss';
 
 const middleware = {};
 const store = createStore(
-  categoriesReducer, 
+  reducer, 
   composeWithDevTools(applyMiddleware(...middleware)),
 );
 

@@ -32,7 +32,7 @@ Dashboard.propTypes = {
 
 const mapStateToProps = (state) => {
   return {
-    categories: state,
+    categories: state.categories,
   };
 };
 

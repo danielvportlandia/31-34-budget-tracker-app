@@ -27,19 +27,20 @@ class CategoryForm extends React.Component {
     if (this.state.name === '') {
       return this.setState({ error: true });
     }
-    this.setState({ error: false });
+    this.setState(defaultState);
     return this.props.onComplete(this.state);
   }
   
   render() {
     const buttonText = this.props.category ? 'Update' : 'Create';
+
     return (
       <div className='categoryForm'>
       <form onSubmit={this.handleSubmit} className='categoryForm'>
       <input
         type='text'
         name='name'
-        placeholder='Name'
+        placeholder='Category'
         value={this.state.name}
         onChange={this.handleChange}
       />
@@ -52,7 +53,7 @@ class CategoryForm extends React.Component {
       />
       <button type='submit'>{buttonText} Category</button>
       </form>
-      { this.state.error && <h2 className="error">You must enter a name for this budget item.</h2> }
+      { this.state.error && <h2 className="error">You must enter a name for this category.</h2> }
       </div>
     );
   }
