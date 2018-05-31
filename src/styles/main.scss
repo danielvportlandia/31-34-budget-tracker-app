@@ -100,6 +100,10 @@ button:hover {
   padding: 1.5em;
 }
 
+.expense {
+  margin-top: 1em;
+}
+
 .expenseDelete {
   position: absolute;
   float: right;
@@ -119,8 +123,4 @@ button:hover {
   display: inline-block;
   width: 100%;
   color: #555555;
-}
-
-.expense {
-  margin-top: 1em;
 }
