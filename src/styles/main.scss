@@ -38,6 +38,7 @@ button:hover {
 .categoryForm :nth-child(2) {
   margin-left: 1.5vw;
   margin-right: 1.5vw;
+  clear: both;
 }
 
 .budgetFormHeader {
@@ -56,16 +57,18 @@ button:hover {
 .categoryItem {
   max-width: 600px;
   background-color: #FFFFFF;
-  height: 8em;
+  height: 20em;
   border-radius: $rounded;
   position: relative;
   margin: 0 auto;
   box-shadow: $light-shadow;
   min-width: 600px;
+  overflow: scroll;
 }
 
 .categoryItemDelete {
   position: absolute;
+  float: right;
   top: 0;
   right: 0;
 }
@@ -73,7 +76,51 @@ button:hover {
 .categoryItemDisplay {
   background: linear-gradient(60deg, #ffa726, #fb8c00);
   box-shadow: $light-shadow;
-  max-width: 600px;
-  margin: 2vw 4vw;
+  max-width: 100%;
   border-radius: $rounded;
+}
+
+.categoryItemDisplay h2 {
+  display: inline;
+  text-align: left;
+  margin-right: 4em;  
+  // float: left;
+}
+
+.categoryItemDisplay p {
+  display: inline;
+  text-align: right;
+  // clear: left;
+  // text-align: right;
+}
+
+.categoryBanner {
+  display: inline-block;
+  width: 100%;
+  padding: 1.5em;
+}
+
+.expense {
+  margin-top: 1em;
+}
+
+.expenseDelete {
+  position: absolute;
+  float: right;
+  top: 0;
+  right: 0;
+}
+
+.expenseDisplay {
+  background: linear-gradient(60deg, #ffa726, #fb8c00);
+  box-shadow: $light-shadow;
+  max-width: 100%;
+  border-radius: $rounded;
+}
+
+.expenseBanner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  color: #555555;
 }

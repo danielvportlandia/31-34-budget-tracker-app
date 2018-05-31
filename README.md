@@ -9,7 +9,8 @@ This is a budget-tracking application where users can create categories and perf
 - View Library: React
 - State Mgmt: Redux
 - Styling: SASS
-- Transpiler: Webpack
+- Bundler: Webpack
+- Transpiler: Babel
 - Testing Suite: Jest
 - Continuous Integration: Travis CI
 
@@ -18,7 +19,7 @@ To test the initial state of the Dashboard, enter the following in the CLI:
 
 `npm run test`
 # Change Log
-05-29-2018 9:44PM - Category functionality complete for create, destroy, and update.
+05-29-2018 9:44PM - Category functionality complete for create, remove, and update.
 
 # Credits & Collaborations
 A special thanks to Melanie Downing (TA) for her assistance on 05/29.
