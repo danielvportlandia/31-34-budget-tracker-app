@@ -5,12 +5,14 @@ import ReactDom from 'react-dom';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import App from './component/app/app'; // remove after deployment
 import reducer from './reducer/main';
+import session from './lib/redux-session';
+import reporter from './lib/redux-reporter';
 import './styles/main.scss';
 
-const middleware = {};
+// const middleware = {};
 const store = createStore(
   reducer, 
-  composeWithDevTools(applyMiddleware(...middleware)),
+  composeWithDevTools(applyMiddleware(reporter, session)),
 );
 
 const appContainer = document.createElement('div');

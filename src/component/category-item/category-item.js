@@ -40,7 +40,7 @@ class CategoryItem extends React.Component {
 CategoryItem.propTypes = {
   expense: PropTypes.object,
   expenses: PropTypes.object,
-  expensCreate: PropTypes.func,
+  expenseCreate: PropTypes.func,
   category: PropTypes.object,
   categoryDestroy: PropTypes.func,
   categoryUpdate: PropTypes.func,
