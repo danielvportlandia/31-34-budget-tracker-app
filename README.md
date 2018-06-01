@@ -20,6 +20,8 @@ To test the initial state of the Dashboard, enter the following in the CLI:
 `npm run test`
 # Change Log
 05-29-2018 9:44PM - Category functionality complete for create, remove, and update.
+05-30-2018 7:32PM - Expense functionality completed.
+05-31-2018 8:27PM - Testing suite added.
 
 # Credits & Collaborations
 A special thanks to Melanie Downing (TA) for her assistance on 05/29.
